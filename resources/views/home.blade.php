@@ -9,7 +9,7 @@
                 @forelse ($movies as $movie)
                 <div class="card m-3" style="width: 18rem;">
                   <div class="card-body">
-                    <h5 class="card-title">{{$movie->title}}</h5>
+                    <h5 class="card-title"><a href="{{ route('movie', ['id' => $movie->id])}}">{{$movie->title}}</a></h5>
                     <p class="card-text">{{$movie->original_title}}</p>
                   </div>
                   <ul class="list-group list-group-flush">
